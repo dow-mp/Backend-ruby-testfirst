@@ -36,6 +36,11 @@ describe "#translate" do
     expect(s).to eq("errychay")
   end
 
+  it "translates many words" do
+    s = translate("the quick brown fox")
+    expect(s).to eq("ethay ickquay ownbray oxfay")
+  end
+
   it "translates two words" do
     s = translate("eat pie")
     expect(s).to eq("eatay iepay")
